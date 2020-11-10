@@ -158,6 +158,10 @@ html {
           transform: rotate(180deg);
   -webkit-filter: grayscale(0%);
   opacity: .7;
+  -webkit-animation: bounce 1.5s 350ms infinite;
+          animation: bounce 1.5s 350ms infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .snap-wrapper .snap-box.header .header-arrow:hover {

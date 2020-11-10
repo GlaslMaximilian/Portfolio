@@ -141,6 +141,8 @@ html
                 transform: rotate(180deg)
                 -webkit-filter: grayscale(0%)
                 opacity: .7
+                animation: bounce 1.5s 350ms infinite
+                animation-fill-mode: both 
                 
             
             .header-arrow:hover
@@ -217,11 +219,20 @@ html
             animation: spinner 1.5s 350ms infinite
 
 
+//animations
+//preloader
+
 @keyframes spinner
     0%
         transform: rotate(0)
     100%
-        transform: rotate(360deg)     
+        transform: rotate(360deg)   
+//bouncing arrow
+// @keyframes bounce
+//     0%
+//         transform: translateY(250px)
+//     100%
+//         transform: translateY(100px)
 
 
 
@@ -230,5 +241,6 @@ html
   .header 
     background-attachment: scroll
   
+
 
   
