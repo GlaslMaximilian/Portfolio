@@ -1,0 +1,271 @@
+body,
+html {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow: hidden;
+  background-color: #161615;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.snap-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+
+.snap-wrapper .snap-box {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 0;
+  scroll-snap-align: center;
+}
+
+.snap-wrapper .snap-box h2 {
+  color: white;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.snap-wrapper .snap-box h2 a {
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.snap-wrapper .snap-box.header {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("/src/images/LandingPageBG1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-filter: grayscale(80%);
+}
+
+.snap-wrapper .snap-box.header h2 {
+  color: white;
+  text-align: center;
+  letter-spacing: .8rem;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.snap-wrapper .snap-box.header h3 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 2rem;
+  font-weight: 250;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.snap-wrapper .snap-box.header .header-about {
+  opacity: .7;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  position: absolute;
+  left: 2.5%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.snap-wrapper .snap-box.header .header-about a {
+  text-decoration: none;
+  color: white;
+}
+
+.snap-wrapper .snap-box.header .header-about:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.snap-wrapper .snap-box.header .header-projects {
+  opacity: .6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  position: absolute;
+  right: 2.5%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.snap-wrapper .snap-box.header .header-projects a {
+  text-decoration: none;
+  color: white;
+}
+
+.snap-wrapper .snap-box.header .header-projects:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.snap-wrapper .snap-box.header .header-arrow {
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  bottom: 30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-filter: grayscale(0%);
+  opacity: .7;
+}
+
+.snap-wrapper .snap-box.header .header-arrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.loader-wrapper {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #161615;
+}
+
+.loader-wrapper h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.loader-wrapper .spinner {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+}
+
+.loader-wrapper .spinner .loader-circle-1 {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 50%;
+  border: solid 1rem #161615;
+  border-right: white 1rem solid;
+  -webkit-animation: spinner 1.5s infinite;
+          animation: spinner 1.5s infinite;
+}
+
+.loader-wrapper .spinner .loader-circle-2 {
+  position: absolute;
+  top: 4.5rem;
+  left: 4.5rem;
+  width: 31rem;
+  height: 31rem;
+  border-radius: 50%;
+  border: solid 1rem #161615;
+  border-right: white 1rem solid;
+  -webkit-animation: spinner 1.5s 200ms infinite;
+          animation: spinner 1.5s 200ms infinite;
+}
+
+.loader-wrapper .spinner .loader-circle-3 {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  border: solid 1rem #161615;
+  border-right: white 1rem solid;
+  -webkit-animation: spinner 1.5s 350ms infinite;
+          animation: spinner 1.5s 350ms infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+/*# sourceMappingURL=main.css.map */
